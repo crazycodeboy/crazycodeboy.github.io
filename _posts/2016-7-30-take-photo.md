@@ -208,6 +208,7 @@ Gradle:
 ```
 
 Maven:  
+
 ```groovy
 <dependency>
   <groupId>com.jph.takephoto</groupId>
