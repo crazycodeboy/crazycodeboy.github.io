@@ -40,6 +40,7 @@ GitHub地址： [https://github.com/crazycodeboy/TakePhoto](https://github.com/c
 1. 继承`TakePhotoActivity`、`TakePhotoFragmentActivity`、`TakePhotoFragment`三者之一。  
 2. 通过`getTakePhoto()`获取`TakePhoto`实例进行相关操作。  
 3. 重写以下方法获取结果        
+
 ```java
 void takeSuccess(String imagePath);  
 void takeFail(String msg);
@@ -57,6 +58,7 @@ void takeCancel();
 TakePhoto提供拍照，从相册选择，从文件中选择三种方式获取图片。    
 
 #### API:
+
 ```java
 /**
  * 从文件中获取图片（不裁剪）
@@ -80,6 +82,7 @@ void onPickFromCapture(Uri outPutUri);
 
 #### API  
 `TakePhoto`支持对图片进行裁剪，无论是拍照的照片,还是从相册、文件中选择的图片。你只需要调用`TakePhoto`的相应方法即可：  
+
 ```java
 /**
  * 从相机获取图片并裁剪
@@ -117,6 +120,7 @@ void onCrop(Uri imageUri, Uri outPutUri, CropOptions options)throws TException;
 `CropOptions`是用于裁剪的配置类，通过它你可以对图片的裁剪比例，最大输出大小，以及是否使用`TakePhoto`自带的裁剪工具进行裁剪等，进行个性化配置。    
 
 **Usage:**  
+
 ```java
  CropOptions cropOptions=new CropOptions.Builder().setAspectX(1).setAspectY(1).setWithOwnCrop(true).create();  
  getTakePhoto().onPickFromDocumentsWithCrop(imageUri,cropOptions);  
@@ -187,6 +191,7 @@ getTakePhoto().onEnableCompress(compressConfig,true).onPickFromGallery();
 1. 为适配部分手机拍照时会回收`Activity`，`TakePhoto`在`onSaveInstanceState`与 `onCreate`做了相应的恢复处理。  
 2. 为适配部分手机拍照或从相册选择图片时屏幕方向会发生转变,从而导致拍照失败的问题，可以在AndroidManifest.xml中对使用了`TakePhoto`的`Activity`添加android:configChanges="orientation|keyboardHidden|screenSize"配置。  
 eg:  
+
 ```
 <activity
     android:name=".MainActivity"
@@ -203,6 +208,7 @@ eg:
 ## 在项目中使用    
 为方便大家使用，现已将TakePhoto V2.0.0发布到JCenter(如果你对如何将项目发布到JCenter感兴趣可以参考：《[教你轻松将Android library 发布到JCenter](http://blog.csdn.net/fengyuzhengfan/article/details/51407009))》  
 Gradle:  
+
 ```groovy
     compile 'com.jph.takephoto:takephoto_library:2.0.0'
 ```
