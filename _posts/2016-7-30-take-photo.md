@@ -2,7 +2,7 @@
 layout: post
 title: TakePhoto-轻量级Android照片处理框架V2.0发布
 categories: [开源项目, Android,Tools]
-tags: [开源项目,Android,Tools]
+tags: [开源项目,Android]
 description: 是一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库
 fullview: true
 comments: true
@@ -25,6 +25,7 @@ comments: true
 - 支持因拍照Activity被回收后的自动恢复   
 
 GitHub地址： [https://github.com/crazycodeboy/TakePhoto](https://github.com/crazycodeboy/TakePhoto)
+
 ## 预览图  
 
 运行效果图：    
