@@ -4,7 +4,7 @@ title: React Native发布APP之签名打包APK
 categories: [React Native, Android,iOS]
 tags: [Android]
 description: React Native发布APP之签名打包APK
-fullview: true
+fullview: false
 comments: true
 ---
 

@@ -3,7 +3,7 @@ layout: page
 tagline:
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 
 <article class="home">
 
@@ -41,7 +41,7 @@ tagline:
 {% endfor %}
 <hr/>
 
-<!-- <ul class="pager"> 
+<ul class="pager">
 
   {% if paginator.previous_page %}
   <li class="previous">
@@ -71,4 +71,4 @@ tagline:
   </li>
   {% endif %}
 
-</ul> -->
+</ul>

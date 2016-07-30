@@ -3,8 +3,8 @@ layout: post
 title: TakePhoto-轻量级Android照片处理框架V2.0发布
 categories: [Open Source,Android,Tools]
 tags: [Open Source,Android]
-description: 是一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库
-fullview: true
+description: 一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库
+fullview: false
 comments: true
 ---
 
