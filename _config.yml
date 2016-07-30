@@ -1,0 +1,71 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+#paginate: 10 # pagination based on number of posts
+#paginate_path: "page:num"
+#exclude: ["README.md"] # files to exclude
+#highlighter: pygments
+#markdown: kramdown
+#disqus: dbyll
+#google_analytics: dbyll
+#title: dbyll
+#
+#defaults:
+#  -
+#    scope:
+#      path: "" # empty string for all files
+#    values:
+#      title: dbyll
+#
+#description: Stylish Jekyll Theme
+#author:
+#  name: dbyll
+#  email: dbyll@ismaildemirbilek.com
+#  github: dbtek
+#  twitter: dbtek
+#  pinterest: asd123
+#  linkedin: asd123
+#  bio: Your stylish, minimalist theme!
+#  email_md5: 726351295ec82e145928582f595aa3aa
+#
+#rss_path: feed.xml
+#categories_path: categories.html
+#tags_path: tags.html
+#
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+#
+#BASE_PATH:
+#
+#gems:
+#  - jekyll-paginate
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: CrazyCodeBoy
+
+title: CrazyCodeBoy
+description: CrazyCodeBoy
+url: "http://crazycodeboy.github.io"
+
+author:
+  name: CrazyCodeBoy
+  email: crazycodeboy@gmail.com
+  github: crazycodeboy
+  csdn: fengyuzhengfan
+  jianshu: CrazyCodeBoy
+  bio: If you can make it here, you can make it anywhere.
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# custom sidebar background image
+sidebar_background_image: ./assets/images/sidebar_background_image.png
+
+BASE_PATH:
+
+highlighter: pygments
+markdown: kramdown
