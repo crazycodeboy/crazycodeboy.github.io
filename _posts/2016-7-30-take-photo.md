@@ -34,6 +34,7 @@ GitHub地址： [https://github.com/crazycodeboy/TakePhoto](https://github.com/c
 
 
 ## 如何使用   
+
 ### 使用TakePhoto有以下两种方式：
 **方式一：通过继承的方式**  
 1. 继承`TakePhotoActivity`、`TakePhotoFragmentActivity`、`TakePhotoFragment`三者之一。  
@@ -54,6 +55,7 @@ void takeCancel();
 
 ### 获取图片
 TakePhoto提供拍照，从相册选择，从文件中选择三种方式获取图片。    
+
 #### API:
 ```java
 /**
@@ -75,6 +77,7 @@ void onPickFromCapture(Uri outPutUri);
 由于不同Android Rom厂商对系统有不同程度的定制，有可能导致某种选择图片的方式不支持，所以为了提高`TakePhoto`的兼容性，当某种选的图片的方式不支持时，`TakePhoto`会自动切换成使用另一种选择图片的方式进行图片选择。      
 
 ### 裁剪图片  
+
 #### API  
 `TakePhoto`支持对图片进行裁剪，无论是拍照的照片,还是从相册、文件中选择的图片。你只需要调用`TakePhoto`的相应方法即可：  
 ```java
@@ -109,6 +112,7 @@ void onPickFromDocumentsWithCrop(Uri outPutUri, CropOptions options);
  */
 void onCrop(Uri imageUri, Uri outPutUri, CropOptions options)throws TException;
 ```
+
 #### CropOptions
 `CropOptions`是用于裁剪的配置类，通过它你可以对图片的裁剪比例，最大输出大小，以及是否使用`TakePhoto`自带的裁剪工具进行裁剪等，进行个性化配置。    
 
@@ -127,6 +131,7 @@ void onCrop(Uri imageUri, Uri outPutUri, CropOptions options)throws TException;
 
 ### 压缩图片
 你可以选择是否对图片进行压缩处理，你只需要告诉它你是否要启用压缩功能以及`CompressConfig`即可。  
+
 #### API
 ```java
  /**
@@ -144,6 +149,7 @@ void onCrop(Uri imageUri, Uri outPutUri, CropOptions options)throws TException;
 getTakePhoto().onEnableCompress(compressConfig,true).onPickFromGalleryWithCrop(imageUri,cropOptions);
 ```  
 如果你启用了图片压缩，`TakePhoto`会使用`CompressImage`对图片进行压缩处理，`CompressImage`目前支持对图片的尺寸以及图片的质量进行压缩。默认情况下，`CompressImage`开启了尺寸与质量双重压缩。  
+
 #### 对指定图片进行压缩  
 另外，你也可以对指定图片进行压缩：    
 **Usage:**  
@@ -160,6 +166,7 @@ new CompressImageImpl(compressConfig).compress(picturePath, new CompressImage.Co
     }
 });
 ```
+
 #### CompressConfig  
 `CompressConfig`是用于图片压缩的配置类，你可以通过`CompressConfig.Builder`对图片压缩后的尺寸以及质量进行相关设置。如果你想改变压缩的方式可以通过`CompressConfig.Builder`进行相关设置。     
 **Usage:**   
@@ -171,6 +178,7 @@ getTakePhoto().onEnableCompress(compressConfig,true).onPickFromGallery();
 
 
 ## 兼容性
+
 ### TakePhoto在深度兼容性方面的测试    
 ![兼容性测试报告](https://raw.githubusercontent.com/crazycodeboy/TakePhoto/master/Screenshots/%E5%85%BC%E5%AE%B9%E6%80%A7%E6%B5%8B%E8%AF%95.jpg)
 
@@ -208,5 +216,6 @@ Maven:
   <type>pom</type>
 </dependency>
 ```  
+
 ## 最后  
 如果你对[TakePhoto](https://github.com/crazycodeboy/TakePhoto)有更好的建议或想改造它，欢迎大家[Fork and Pull requests](https://github.com/crazycodeboy/TakePhoto)。  
