@@ -63,7 +63,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 # custom sidebar background image
-sidebar_background_image: ./assets/images/sidebar_background_image.png
+sidebar_background_image: https://raw.githubusercontent.com/crazycodeboy/crazycodeboy.github.io/master/assets/images/sidebar_background_image.jpg
 
 BASE_PATH:
 
