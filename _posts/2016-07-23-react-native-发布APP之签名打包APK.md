@@ -12,7 +12,7 @@ comments: true
 本文出自[《React Native学习笔记》](https://github.com/crazycodeboy/RNStudyNotes/)系列文章。  
 了解更多，可以[关注我的GitHub](https://github.com/crazycodeboy/)和加入：  
 [React Native学习交流群](http://jq.qq.com/?_wv=1027&k=2IBHgLD)     
-![React Native学习交流群](../React Native发布APP之签名打包APK/images/react native 学习交流群_qrcode_share.png)  
+![React Native学习交流群](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%E5%8F%91%E5%B8%83APP%E4%B9%8B%E7%AD%BE%E5%90%8D%E6%89%93%E5%8C%85APK/images/react%20native%20%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81%E7%BE%A4_qrcode_share.png)
 -------
 用React Native开发好APP之后，如何将APP发布以供用户使用呢？一款APP的发布流程无外乎：签名打包—>发布到各store这两大步骤。本文将向大家分享如何签名打包一款React Native APP。   
 
@@ -30,11 +30,11 @@ comments: true
 既然Android Stuio打包行不通，那么我们采用[React Native官方推荐的方式](http://facebook.github.io/react-native/docs/signed-apk-android.html)进行签名打包(下文会重点讲解“通过官方推荐的方式签名打包”)，打包过程很顺利，将打包好的APK安装到手机上后，发现能正常运行。   
 对比用Android Studio签名打包生成的APK与用官方推荐方式签名打包生成的APK,发现了它们在大小上和内容上都有所差别，如图：  
 **大小上的差别：**   
-![两种打包方式apk大小差异.png](http://upload-images.jianshu.io/upload_images/904056-7b6c141be43c4b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![两种打包方式apk大小差异.png](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%E5%8F%91%E5%B8%83APP%E4%B9%8B%E7%AD%BE%E5%90%8D%E6%89%93%E5%8C%85APK/images/%E4%B8%A4%E7%A7%8D%E6%89%93%E5%8C%85%E6%96%B9%E5%BC%8Fapk%E5%A4%A7%E5%B0%8F%E5%B7%AE%E5%BC%82.png)
 
 对比两种打包方式发现，它们所生成的apk在大小上相差几百k。为什么会相差那么大呢，带着这个疑问我们就将两个apk解压之后看看他们内部具体有什么不同。   
 **apk内部差别：**    
-![两种方式签名打包的APK内部差别.png](http://upload-images.jianshu.io/upload_images/904056-3be603083b701603.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![两种方式签名打包的APK内部差别.png](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%E5%8F%91%E5%B8%83APP%E4%B9%8B%E7%AD%BE%E5%90%8D%E6%89%93%E5%8C%85APK/images/%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E7%AD%BE%E5%90%8D%E6%89%93%E5%8C%85%E7%9A%84APK%E5%86%85%E9%83%A8%E5%B7%AE%E5%88%AB.png)
 
 上图是解压之后apk的内部细节，发现通过官方推荐的方式打包的apk多了两个文件“index.android.bundle”与“index.android.bundle.meta”,打开“index.android.bundle”发现其和从`http://localhost:8081/index.android.bundle?platform=android&dev=true&hot=false&minify=false`获取的文件内容是一样的，都是我们写的 React Native 的 JS 代码。  
 
@@ -59,6 +59,7 @@ MYAPP_RELEASE_STORE_PASSWORD=*****
 MYAPP_RELEASE_KEY_PASSWORD=*****  
 ```  
 提示：用正确的证书密码、alias以及key密码替换掉 *****。
+
 ### 第三步：在gradle配置文件中添加签名配置   
 编辑 android/app/build.gradle文件添加如下代码：  
 
@@ -89,7 +90,7 @@ android {
 terminal进入项目下的android目录，运行如下代码：   
 `./gradlew assembleRelease`   
 
-![签名打包成功.png](http://upload-images.jianshu.io/upload_images/904056-390a6e8ba02fc0ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![签名打包成功.png](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%E5%8F%91%E5%B8%83APP%E4%B9%8B%E7%AD%BE%E5%90%8D%E6%89%93%E5%8C%85APK/images/%E9%80%9A%E8%BF%87%E2%80%9C%E9%92%A5%E5%8C%99%E4%B8%B2%E8%AE%BF%E9%97%AE(Keychain%20Access)%E2%80%9D%E5%B7%A5%E5%85%B7%E4%BF%9D%E6%8A%A4%E5%AF%86%E7%A0%81%E5%AE%89%E5%85%A8%20%20.png)
 
 签名打包成功后你会在 "android/app/build/outputs/apk/"目录下看到签名成功后的app-release.apk文件。  
 提示：如果你需要对apk进行混淆打包 编辑android/app/build.gradle：   
@@ -111,7 +112,7 @@ def enableProguardInReleaseBuilds = true
 ### 具体步骤：  
 1. `cmd+space`打开“钥匙串访问(Keychain Access)”工具。
 2. 在登录选项中新钥匙串，如图：  
-![通过“钥匙串访问(Keychain Access)”工具保护密码安全  .png](http://upload-images.jianshu.io/upload_images/904056-a4a7ef5b0a1661d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![通过“钥匙串访问(Keychain Access)”工具保护密码安全  .png](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%E5%8F%91%E5%B8%83APP%E4%B9%8B%E7%AD%BE%E5%90%8D%E6%89%93%E5%8C%85APK/images/%E9%80%9A%E8%BF%87%E2%80%9C%E9%92%A5%E5%8C%99%E4%B8%B2%E8%AE%BF%E9%97%AE(Keychain%20Access)%E2%80%9D%E5%B7%A5%E5%85%B7%E4%BF%9D%E6%8A%A4%E5%AF%86%E7%A0%81%E5%AE%89%E5%85%A8%20%20.png)
 
 提示： 你可以在terminal中运行如下命令检查新建的钥匙串是否成功。   
  `security find-generic-password -s android_keystore -w`  
@@ -157,5 +158,5 @@ android {
 ...
 ```   
 
-**注意事项 **    
+**注意事项**   
 钥匙串访问(Keychain Access)工具只是帮我们托管了，证书密码，证书明和alias还是需要我们在`gradle.properties`中设置一下的。
