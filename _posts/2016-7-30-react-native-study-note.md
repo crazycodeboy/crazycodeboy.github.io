@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Native 学习笔记
-categories: [React Native, Android, iOS]
+categories: [React Native, Android, 'iOS']
 tags: [心得, 笔记]
 description: 该项目用于分享我在研究React Native过程中的一些经验，总结，以及踩过的一些坑。
 fullview: true
