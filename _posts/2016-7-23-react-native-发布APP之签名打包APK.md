@@ -50,4 +50,16 @@ comments: true
 
 ### 第一步：生成Android签名证书  
 如果你已经有签名证书可以绕过此步骤。  
-签名APK需要一个证书用于为APP签名，生成签名证书可以Android Studio以可视化的方式生成，也可以使用终端采用命令行的方式生成，需要的可以自行Google这里不再敖述。
+签名APK需要一个证书用于为APP签名，生成签名证书可以Android Studio以可视化的方式生成，也可以使用终端采用命令行的方式生成，需要的可以自行Google这里不再敖述。  
+
+### 第二步：设置gradle变量   
+1. 将你的签名证书copy到 android/app目录下。
+2. 编辑`~/.gradle/gradle.properties`或`../android/gradle.properties`(一个是全局`gradle.properties`，一个是项目中的`gradle.properties`，大家可以根据需要进行修改) ，加入如下代码：     
+
+```
+MYAPP_RELEASE_STORE_FILE=your keystore filename  
+MYAPP_RELEASE_KEY_ALIAS=your keystore alias  
+MYAPP_RELEASE_STORE_PASSWORD=*****    
+MYAPP_RELEASE_KEY_PASSWORD=*****  
+```  
+提示：用正确的证书密码、alias以及key密码替换掉 *****。
