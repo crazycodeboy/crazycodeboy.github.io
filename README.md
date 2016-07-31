@@ -1,16 +1,4 @@
-## 博客更新指南
+Blog分支用于存储发表博文所需的md源文件，图片资源等。
 
-1. clone 仓库到本地
-2. 在_posts目录下新建文章，如``2016-7-30-react-native-study-note``，可以参考其他文章。
-  
-```
----
-layout: post
-title: 标题
-categories: [分类]
-tags: [标签]
-fullview: true
----
-
-# 正文
-```
+> blogs: 博客资源更目录
+> images：博客所用图片资源
