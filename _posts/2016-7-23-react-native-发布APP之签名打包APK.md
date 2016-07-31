@@ -2,8 +2,8 @@
 layout: post
 title: React Native发布APP之签名打包APK
 categories: [React Native, Android,iOS]
-tags: [发布,签名，打包,APK]
-description: React Native发布APP之签名打包APK
+tags: [发布,签名,打包APK]
+description: 用React Native开发好APP之后，如何将APP发布以供用户使用呢？ <br>一款APP的发布流程无外乎：签名打包—>发布到各store这两大步骤。  <br>本文将向大家分享如何签名打包一款React Native APP。  
 fullview: false
 comments: true
 ---
