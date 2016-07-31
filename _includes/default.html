@@ -98,9 +98,63 @@
 
 		<footer>
 			<hr/>
-			<p>
-				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
-			</p>
+				<div id="contact-list" class="text-center">
+					<div class="list-unstyled list-inline">
+						&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+
+						{% if site.author.github %}
+						<li>
+							<a target="_blank" class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
+								<i class="fa fa-github-alt fa-lg"></i>
+							</a>
+						</li>
+						{% endif %}
+						{% if site.author.twitter %}
+						<li>
+							<a target="_blank" class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
+								<i class="fa fa-twitter fa-lg"></i>
+							</a>
+						</li>
+						{% endif %}
+						{% if site.author.csdn %}
+						<li>
+							<a target="_blank" class="btn btn-default btn-sm" href="http://blog.csdn.net/{{ site.author.csdn }}">
+								<img src="https://raw.githubusercontent.com/crazycodeboy/crazycodeboy.github.io/master/assets/images/icons_csdn.png">
+							</a>
+						</li>
+						{% endif %}
+						{% if site.author.jianshu %}
+						<li>
+							<a target="_blank" class="btn btn-default btn-sm" href="http://www.jianshu.com/users/ca3943a4172a/latest_articles">
+								<img src="https://raw.githubusercontent.com/crazycodeboy/crazycodeboy.github.io/master/assets/images/icons_jianshu.png">
+							</a>
+						</li>
+						{% endif %}
+						{% if site.author.email %}
+						<li>
+							<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
+								<i class="fa fa-envelope fa-lg"></i>
+							</a>
+						</li>
+						{% endif %}
+					</ul>
+					<ul id="contact-list-secondary" class="list-unstyled list-inline">
+						{% if site.author.pinterest %}
+						<li>
+							<a class="btn btn-default btn-sm" href="https://pinterest.com/{{ site.author.pinterest }}">
+								<i class="fa fa-pinterest fa-lg"></i>
+							</a>
+						</li>
+						{% endif %}
+						{% if site.author.linkedin %}
+						<li>
+							<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
+								<i class="fa fa-linkedin fa-lg"></i>
+							</a>
+						</li>
+						{% endif %}						
+					</div>
+				</div>
 		</footer>
 	</div>
 
