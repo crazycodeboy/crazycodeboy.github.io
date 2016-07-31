@@ -39,6 +39,8 @@
 #gems:
 #  - jekyll-paginate
 
+disqus: dbyll
+google_analytics: dbyll
 defaults:
   -
     scope:
