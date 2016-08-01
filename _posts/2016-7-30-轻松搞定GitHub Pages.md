@@ -14,6 +14,9 @@ GitHub支持创建个人或组织以及项目这两种类型的网站。
 
 
 ## 为项目创建GitHub Pages
+
+[https://crazycodeboy.github.io/TakePhoto](https://crazycodeboy.github.io/TakePhoto)这是开源项目[TakePhoto](https://github.com/crazycodeboy/TakePhoto)的GitHub Pages，大家可以先看一下效果。
+
 你可以为你的项目创建一个GitHub Pages，大致分为以下步骤：  
 
 ### 第一步：仓库设置  
