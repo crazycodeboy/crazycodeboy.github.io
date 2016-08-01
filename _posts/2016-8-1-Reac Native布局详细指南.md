@@ -88,7 +88,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
   </View>
   </View>
 ```
-![flexDirection](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/Reac%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/flexDirection.jpg)
+![flexDirection](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/React%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/flexDirection.jpg)
 
 
 
@@ -108,7 +108,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 ···
 </View>
 ```
-![flexWrap](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/Reac%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/flexWrap.jpg)
+![flexWrap](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/React%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/flexWrap.jpg)
 
 
 >#### justifyContent    
@@ -131,7 +131,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 ···
 </View>
 ```
-![justifyContent](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/Reac%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/justifyContent.jpg)
+![justifyContent](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/React%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/justifyContent.jpg)
 
 
 >#### alignItems    
@@ -152,7 +152,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 ···
 </View>
 ```
-![alignItems](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/Reac%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/alignItems.jpg)  
+![alignItems](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/React%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/alignItems.jpg)  
 
 
 #### 子视图属性
@@ -181,7 +181,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 </View>
 ...
 ```
-![alignItems](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/Reac%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/alignSelf.jpg)  
+![alignItems](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/React%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/alignSelf.jpg)  
 
 
 >#### flex     
@@ -205,7 +205,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
   </View>          
 </View>
 ```
-![flex](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/Reac%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/flex.jpg)  
+![flex](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/develop/React%20Native%E5%B8%83%E5%B1%80/React%20Native%E5%B8%83%E5%B1%80%E8%AF%A6%E7%BB%86%E6%8C%87%E5%8D%97/images/flex.jpg)  
 
 
 ### 其他布局 in React Native  
@@ -269,8 +269,8 @@ position enum('absolute', 'relative')属性设置元素的定位方式，为将�
 ## 参考  
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)   
 [Using CSS flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)  
-[Layout with Flexbox](https://facebook.github.io/react-native/docs/flexbox.html)  
-[Layout Props](https://facebook.github.io/react-native/docs/layout-props.html)
+[Layout with Flexbox](https://facebook.github.io/React-native/docs/flexbox.html)  
+[Layout Props](https://facebook.github.io/React-native/docs/layout-props.html)
 
 ## About
 本文出自[《React Native学习笔记》](https://github.com/crazycodeboy/RNStudyNotes/)系列文章。    
