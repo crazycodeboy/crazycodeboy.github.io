@@ -23,9 +23,9 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 ### 像素无关  
 在React Native中尺寸是没有单位的，它代表了设备独立像素。  
 
-```java
-<View style={{width:100,height:100,margin:40,backgroundColor:'gray'}}>
-        <Text style={{fontSize:16,margin:20}}>尺寸</Text>
+```
+<View style={\{width:100,height:100,margin:40,backgroundColor:'gray'}}>
+        <Text style={\{fontSize:16,margin:20}}>尺寸</Text>
 </View>
 ```    
 
@@ -73,18 +73,18 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 **Usage:**  
 
 ```
-<View style={{flexDirection:'row-reverse',backgroundColor:"darkgray",marginTop:20}}>
-    <View style={{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>1</Text>
+<View style={\{flexDirection:'row-reverse',backgroundColor:"darkgray",marginTop:20}}>
+    <View style={\{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>1</Text>
   </View>
-  <View style={{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>2</Text>
+  <View style={\{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>2</Text>
   </View>
-  <View style={{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>3</Text>
+  <View style={\{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>3</Text>
   </View>
-  <View style={{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>4</Text>
+  <View style={\{width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>4</Text>
   </View>
   </View>
 ```
@@ -104,7 +104,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 **Usage:**   
 
 ```
-<View 		 style={{flexWrap:'wrap',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
+<View 		 style={\{flexWrap:'wrap',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
 ···
 </View>
 ```
@@ -127,7 +127,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 **Usage:**   
 
 ```
-<View 		 style={{justifyContent:'center',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
+<View 		 style={\{justifyContent:'center',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
 ···
 </View>
 ```
@@ -148,7 +148,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 **Usage:**   
 
 ```
-<View 		 style={{justifyContent:'center',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
+<View 		 style={\{justifyContent:'center',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
 ···
 </View>
 ```
@@ -176,8 +176,8 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 **Usage:**   
 
 ```
-<View style={{alignSelf:'baseline',width:60,height:	20,backgroundColor:"darkcyan",margin:5}}>
-   <Text style={{fontSize:16}}>1</Text>
+<View style={\{alignSelf:'baseline',width:60,height:	20,backgroundColor:"darkcyan",margin:5}}>
+   <Text style={\{fontSize:16}}>1</Text>
 </View>
 ...
 ```
@@ -193,15 +193,15 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 **Usage:**   
 
 ```
-<View style={{flexDirection:'row',height:40, backgroundColor:"darkgray",marginTop:20}}>
-  <View style={{flex:1,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>flex:1</Text>
+<View style={\{flexDirection:'row',height:40, backgroundColor:"darkgray",marginTop:20}}>
+  <View style={\{flex:1,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>flex:1</Text>
   </View>
-  <View style={{flex:2,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>flex:2</Text>
+  <View style={\{flex:2,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>flex:2</Text>
   </View>
-  <View style={{flex:3,backgroundColor:"darkcyan",margin:5}}>
-    <Text style={{fontSize:16}}>flex:3</Text>
+  <View style={\{flex:3,backgroundColor:"darkcyan",margin:5}}>
+    <Text style={\{fontSize:16}}>flex:3</Text>
   </View>          
 </View>
 ```
