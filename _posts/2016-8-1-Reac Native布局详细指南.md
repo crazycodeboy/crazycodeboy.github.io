@@ -23,7 +23,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 ### 像素无关  
 在React Native中尺寸是没有单位的，它代表了设备独立像素。  
 
-```
+```html
 <View style={ {width:100,height:100,margin:40,backgroundColor:'gray'}}>
         <Text style={ {fontSize:16,margin:20}}>尺寸</Text>
 </View>
@@ -72,7 +72,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 
 **Usage:**  
 
-```
+```html
 <View style={ {flexDirection:'row-reverse',backgroundColor:"darkgray",marginTop:20}}>
     <View style={ {width:40,height:40,backgroundColor:"darkcyan",margin:5}}>
     <Text style={ {fontSize:16}}>1</Text>
@@ -103,7 +103,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 
 **Usage:**   
 
-```
+```html
 <View 		 style={ {flexWrap:'wrap',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
 ···
 </View>
@@ -126,7 +126,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 
 **Usage:**   
 
-```
+```html
 <View 		 style={ {justifyContent:'center',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
 ···
 </View>
@@ -147,7 +147,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 
 **Usage:**   
 
-```
+```html
 <View 		 style={ {justifyContent:'center',flexDirection:'row',backgroundColor:"darkgray",marginTop:20}}>
 ···
 </View>
@@ -175,7 +175,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 
 **Usage:**   
 
-```
+```html
 <View style={ {alignSelf:'baseline',width:60,height:	20,backgroundColor:"darkcyan",margin:5}}>
    <Text style={ {fontSize:16}}>1</Text>
 </View>
@@ -192,7 +192,7 @@ FlexBox提供了在不同尺寸设备上都能保持一致的布局方式。Flex
 
 **Usage:**   
 
-```
+```html
 <View style={ {flexDirection:'row',height:40, backgroundColor:"darkgray",marginTop:20}}>
   <View style={ {flex:1,backgroundColor:"darkcyan",margin:5}}>
     <Text style={ {fontSize:16}}>flex:1</Text>
