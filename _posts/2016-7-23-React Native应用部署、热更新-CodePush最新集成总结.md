@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Native应用部署/热更新-CodePush最新集成总结
-categories: [React Native, Android,iOS]
+categories: [React Native, Android,iOS,Tools]
 tags: [发布,CodePush,动态更新]
 description: React Native的出现为移动开发领域带来了两大革命性的创新：<br>1. 整合了移动端APP的开发，不仅缩短了APP的开发时间，也提高了APP的开发效率。 <br>2. 为移动APP动态更新提供了基础。本文将向大家分享React Natvie应用部署/动态更新方面的内容。  <br>本文将向大家分享React Natvie应用部署/动态更新方面的内容。
 fullview: false

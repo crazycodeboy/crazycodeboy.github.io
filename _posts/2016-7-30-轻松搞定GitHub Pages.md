@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 轻松搞定GitHub Pages
-categories: [Tools,教程,GitHub]
+categories: [Tools,教程]
 tags: [GitHub Pages,创建个人博客]
 description: GitHub支持创建个人或组织以及项目这两种类型的网站。  <br>本文章将向大家分享如何为项目、组织或个人创建一个GitHub Pages。
 fullview: false

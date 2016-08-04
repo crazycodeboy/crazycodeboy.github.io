@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 【Android开发高级实践】轻松帮你发现Bug(FindBugs在AndroidStudio上的应用)
-categories: [Android,教程]
+categories: [Android,教程,Tools]
 tags: [FindBugs,Bugs]
 description: 在日常开发过程中难免会因为一时疏忽而留下一些Bug，这些Bug就是埋在程序里的定时炸弹，如果不能及时铲除就会导致程序的不稳定，异常或闪退的现象，从而导致用户的体验的下降。那么怎么才能找出这些埋在程序里的定时炸弹呢？
 fullview: false

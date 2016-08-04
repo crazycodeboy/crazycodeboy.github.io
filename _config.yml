@@ -49,7 +49,7 @@ defaults:
       title: CrazyCodeBoy
 
 title: CrazyCodeBoy
-description: CrazyCodeBoy
+description: 移动开发，Android，iOS
 url: "http://crazycodeboy.github.io"
 
 author:
@@ -59,7 +59,7 @@ author:
   github: crazycodeboy
   csdn: fengyuzhengfan
   jianshu: CrazyCodeBoy
-  bio: If you can make it here, you can make it anywhere.
+  bio: 专注于移动开发，分享知识，共享快乐。
 
 rss_path: feed.xml
 categories_path: categories.html

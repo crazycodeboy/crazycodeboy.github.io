@@ -4,24 +4,38 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-预览图	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## 预览图$/;"	function	line:17
-在手机上的运行效果	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 在手机上的运行效果$/;"	function	line:20
-在电脑上的运行效果	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 在电脑上的运行效果$/;"	function	line:24
-dbyll简介	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## dbyll简介$/;"	function	line:34
-特性	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## 特性$/;"	function	line:37
-安装dbyll (在本地运行dbyll)	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## 安装dbyll (在本地运行dbyll)$/;"	function	line:50
-第一步： 安装ruby	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 第一步： 安装ruby$/;"	function	line:56
-第二步：安装Bundler	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 第二步：安装Bundler  $/;"	function	line:61
-第三步：安装dbyll所需的依赖包	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 第三步：安装dbyll所需的依赖包  $/;"	function	line:70
-第四步：运行dbyll	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 第四步：运行dbyll  $/;"	function	line:75
-自定义dbyll	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## 自定义dbyll  $/;"	function	line:88
-Configuration(配置)	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### Configuration(配置)$/;"	function	line:90
-关于开启评论功能	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 关于开启评论功能   $/;"	function	line:110
-侧边栏(sidebar)	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 侧边栏(sidebar)  $/;"	function	line:121
-其他问题	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 其他问题$/;"	function	line:124
-发表的文章在首页不显示？	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^#### 发表的文章在首页不显示？  $/;"	function	line:126
-在GitHub上创建dbyll主题的个人博客	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## 在GitHub上创建dbyll主题的个人博客  $/;"	function	line:135
-具体步骤：	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 具体步骤：$/;"	function	line:141
-发表文章：	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^### 发表文章：  $/;"	function	line:154
-正文	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^# 正文$/;"	function	line:172
-参考	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-07-31-如何为自己创建一个既时尚又好用的博客网站.md	/^## 参考  $/;"	function	line:175
+Developer Menu	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^## Developer Menu$/;"	function	line:15
+如何开启Developer Menu	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### 如何开启Developer Menu  $/;"	function	line:21
+在模拟器上开启Developer Menu	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 在模拟器上开启Developer Menu$/;"	function	line:23
+Android模拟器：	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#####  Android模拟器：$/;"	function	line:25
+iOS模拟器：	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#####  iOS模拟器：$/;"	function	line:31
+在真机上开启Developer Menu：	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 在真机上开启Developer Menu：$/;"	function	line:35
+预览图	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 预览图$/;"	function	line:39
+Reloading JavaScript	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^## Reloading JavaScript$/;"	function	line:42
+Reload js	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### Reload js$/;"	function	line:50
+小技巧：Automatic reloading	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### 小技巧：Automatic reloading$/;"	function	line:56
+Enable Live Reload	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### Enable Live Reload$/;"	function	line:58
+Hot Reloading	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### Hot Reloading$/;"	function	line:65
+Errors and Warnings	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^## Errors and Warnings$/;"	function	line:73
+Errors	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### Errors  $/;"	function	line:77
+Warnings	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### Warnings  $/;"	function	line:83
+Chrome Developer Tools	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^## Chrome Developer Tools  $/;"	function	line:94
+Chrome 开发工具	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### Chrome 开发工具  $/;"	function	line:96
+如何通过 Chrome调试React Native程序	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### 如何通过 Chrome调试React Native程序  $/;"	function	line:114
+第一步：启动远程调试	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 第一步：启动远程调试   $/;"	function	line:117
+第二步：打开Chrome开发者工具	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 第二步：打开Chrome开发者工具$/;"	function	line:121
+真机调试	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### 真机调试  $/;"	function	line:129
+在iOS上	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 在iOS上$/;"	function	line:131
+在Android上	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 在Android上   $/;"	function	line:135
+小技巧：	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^### 小技巧：$/;"	function	line:145
+巧用Sources面板	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 巧用Sources面板$/;"	function	line:148
+执行控工具	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 执行控工具  $/;"	function	line:157
+查看js文件	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 查看js文件    $/;"	function	line:167
+断点其实很简单	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 断点其实很简单   $/;"	function	line:172
+添加和移除断点	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 添加和移除断点$/;"	function	line:178
+高级操作	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 高级操作  $/;"	function	line:186
+管理你的断点	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 管理你的断点  $/;"	function	line:206
+有一种断点叫全局断点	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 有一种断点叫全局断点$/;"	function	line:214
+不要忽略控制台	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^#### 不要忽略控制台$/;"	function	line:220
+参考	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^## 参考  $/;"	function	line:227
+About	/Users/penn/Documents/GitRepository/crazycodeboy.github.io/_posts/2016-8-3-React Native调试技巧与心得.md	/^## About$/;"	function	line:232
