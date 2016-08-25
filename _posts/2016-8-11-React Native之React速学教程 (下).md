@@ -152,7 +152,7 @@ class PauseMenu extends React.Component{
     componentWillMount(){
         AppStateIOS.addEventListener('change', this.onAppPaused.bind(this));
     }
-    componentDidUnmount(){
+    componentWillUnmount(){
         AppStateIOS.removeEventListener('change', this.onAppPaused.bind(this));
     }
     onAppPaused(event){
@@ -171,7 +171,7 @@ class PauseMenu extends React.Component{
     componentWillMount(){
         AppStateIOS.addEventListener('change', this._onAppPaused);
     }
-    componentDidUnmount(){
+    componentWillUnmount(){
         AppStateIOS.removeEventListener('change', this._onAppPaused);
     }
     onAppPaused(event){
@@ -186,7 +186,7 @@ class PauseMenu extends React.Component{
     componentWillMount(){
         AppStateIOS.addEventListener('change', this.onAppPaused);
     }
-    componentDidUnmount(){
+    componentWillUnmount(){
         AppStateIOS.removeEventListener('change', this.onAppPaused);
     }
     onAppPaused = (event) => {
