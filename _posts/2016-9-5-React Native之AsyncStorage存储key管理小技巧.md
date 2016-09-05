@@ -95,18 +95,18 @@ getFavoriteKeys(){//获取收藏的Respository对应的key
 
 ```javascript
 AsyncStorage.multiGet(keys, (err, stores) => {
-            try {
-              stores.map((result, i, store) => {
-                // get at each store's key/value so you can work with it
-                let key = store[i][0];
-                let value = store[i][1];
-                if (value)items.push(JSON.parse(value));
-              });
-              resolve(items);
-            } catch (e) {
-              reject(e);
-            }
-          });
+    try {
+      stores.map((result, i, store) => {
+        // get at each store's key/value so you can work with it
+        let key = store[i][0];
+        let value = store[i][1];
+        if (value)items.push(JSON.parse(value));
+      });
+      resolve(items);
+    } catch (e) {
+      reject(e);
+    }
+ });
  ```
 
 >**以上是我在使用AsyncStorage进行批量数据查询的一些思路，大家根据实际情况进行调整。**
