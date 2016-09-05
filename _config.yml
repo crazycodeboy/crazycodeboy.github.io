@@ -70,5 +70,5 @@ sidebar_background_image: https://raw.githubusercontent.com/crazycodeboy/crazyco
 
 BASE_PATH:
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
