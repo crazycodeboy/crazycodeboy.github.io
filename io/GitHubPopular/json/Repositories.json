@@ -13,6 +13,7 @@
   ],
   "info": {
     "html_url": "https://github.com/crazycodeboy/",
-    "url": "https://api.github.com/repos/crazycodeboy/"
+    "url": "https://api.github.com/repos/crazycodeboy/",
+    "currentRepoUrl":"https://api.github.com/repos/crazycodeboy/GitHubPopular"
   }
 }
