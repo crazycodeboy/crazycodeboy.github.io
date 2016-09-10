@@ -1,74 +1,119 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+# Site settings
+title: Hux Blog
+SEOTitle: 黄玄的博客 | Hux Blog
+header-img: img/home-bg.jpg
+email: huxpro@gmail.com
+description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
+keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友"
+url: "http://jiapenghui.com/Blog/"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-#paginate: 10 # pagination based on number of posts
-#paginate_path: "page:num"
-#exclude: ["README.md"] # files to exclude
-#highlighter: pygments
-#markdown: kramdown
-#disqus: dbyll
-#google_analytics: dbyll
-#title: dbyll
-#
-#defaults:
-#  -
-#    scope:
-#      path: "" # empty string for all files
-#    values:
-#      title: dbyll
-#
-#description: Stylish Jekyll Theme
-#author:
-#  name: dbyll
-#  email: dbyll@ismaildemirbilek.com
-#  github: dbtek
-#  twitter: dbtek
-#  pinterest: asd123
-#  linkedin: asd123
-#  bio: Your stylish, minimalist theme!
-#  email_md5: 726351295ec82e145928582f595aa3aa
-#
-#rss_path: feed.xml
-#categories_path: categories.html
-#tags_path: tags.html
-#
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-#
-#BASE_PATH:
-#
-#gems:
-#  - jekyll-paginate
 
-disqus: crazycodeboy
-google_analytics: crazycodeboy
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: CrazyCodeBoy
 
-title: CrazyCodeBoy
-description: 移动开发，Android，iOS
-url: "http://crazycodeboy.github.io"
+# SNS settings
+RSS: false
+weibo_username:     huxpro
+zhihu_username:     huxpro
+github_username:    huxpro
+#twitter_username:  huxpro
+facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
 
-author:
-  name: CrazyCodeBoy
-  avatar: http://avatar.csdn.net/1/1/E/1_fengyuzhengfan.jpg
-  email: crazycodeboy@gmail.com
-  github: crazycodeboy
-  csdn: fengyuzhengfan
-  jianshu: CrazyCodeBoy
-  bio: 专注于移动开发，分享知识，共享快乐。
 
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
 
-# custom sidebar background image
-sidebar_background_image: https://raw.githubusercontent.com/crazycodeboy/crazycodeboy.github.io/master/assets/images/sidebar_background_image.jpg
-
-BASE_PATH:
-
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: huxblog
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，我想去看看。"
+sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "Su",
+        href: "http://su.gallery/"
+    },{
+        title: "乱序",
+        href: "http://mida.re/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
+    },{
+        title: "Luke 的自留地",
+        href: "http://hmqk1995.github.io"
+    },{
+        title: "Ebn's Blog",
+        href: "http://ebnbin.com/"
+    },{
+        title: "SmdCn's Blog",
+        href: "http://blog.smdcn.net"
+    },{
+        title: "解旻的博客",
+        href: "http://xieminis.me/"
+    },{
+        title: "DHong Say",
+        href: "http://dhong.co"
+    },{
+        title: "尹峰以为",
+        href: "http://ingf.github.io/"
+    },{
+        title: "前端神盾局",
+        href: "http://wepiaofei.github.io/blog/"
+    }
+]

@@ -1,39 +1,70 @@
 ---
-layout: page
 title: Tags
-header: Posts By Tag
-group: navigation
+layout: default
+description: keep hungry keep foolish
+header-img: "img/tag-bg.jpg"
 ---
 
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tag_words = site_tags | split:',' | sort %}
-
-
-<div class="col-sm-3 col-xs-6">
-    <ul class="nav nav-tabs-vertical cat-tag-menu">
-    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-      {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-      <li>
-          <a href="#{{ this_word | replace:' ','-' }}-ref">
-            {{ this_word }}<span class="badge pull-right">{{ site.tags[this_word].size }}</span>
-         </a>
-      </li>
-   {% endunless %}{% endfor %}
-   </ul>
-</div>
-<!-- Tab panes -->
-<div class="tab-content col-sm-9 col-xs-6">
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <div class="tab-pane" id="{{ this_word | replace:' ','-' }}-ref">
-      <h2 style="margin-top: 0px">Posts tagged  with {{ this_word }}</h2>
-      <ul class="list-unstyled">
-        {% for post in site.tags[this_word] %}{% if post.title != null %}
-          <li style="line-height: 35px;"><a href="{{ site.BASE_PATH }}{{post.url}}">{{post.title}}</a> <span class="text-muted">- {{ post.date | date: "%B %d, %Y" }}</span></li>
-        {% endif %}{% endfor %}
-      </ul>
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
     </div>
-  {% endunless %}{% endfor %}
-</div>
+</header>
 
-<div class="clearfix"></div>
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 标签云 -->
+			<div id='tag_cloud' class="tags">
+				{% for tag in site.tags %}
+				<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+				{% endfor %}
+			</div>
+
+            <!--<blockquote class="tag-comments">
+                标签命名规范：
+                    <li>行业观察、职位、公司优先使用中文</li>
+                    <li>外国产品、术语优先使用英文</li>
+            </blockquote>-->
+
+            <!-- 标签列表 -->
+			{% for tag in site.tags %}
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
+                    <span class="tag-text">{{ tag[0] }}</span>
+                </span>
+				{% for post in tag[1] %}
+				  <!-- <li class="listing-item">
+				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="{{ post.url | prepend: site.baseurl }}">
+				        <h2 class="post-title">
+                            {{ post.title }}
+				        </h2>
+				        {% if post.subtitle %}
+				        <h3 class="post-subtitle">
+				            {{ post.subtitle }}
+				        </h3>
+				        {% endif %}
+				    </a>
+				    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+				</div>
+				<hr>
+				{% endfor %}
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
