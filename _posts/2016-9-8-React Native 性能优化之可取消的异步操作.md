@@ -4,7 +4,7 @@ title:      "React Native 性能优化之可取消的异步操作"
 subtitle:   "为Promise插上可取消的翅膀 | 可取消的网络请求fetch"
 date:       2016-09-08 00:00:00
 author:     "CrazyCodeBoy"
-header-img: "http://pic.90sjimg.com/back_pic/00/00/40/82/659732c942d9a4c8957a56b38c296132.jpg"
+header-img: "./img/post/post-bg-performance.jpg"
 catalog: true
 tags:
     - Android
@@ -36,7 +36,8 @@ tags:
 
 `Promise`是React Native开发过程中用于异步操作的最常用的API，但Promise没有提供用于取消异步操作的方法。为了实现可取消的异步操作，我们可以为Promise包裹一层可取消的外衣。    
 
-```javascript
+
+```JavaScript
 const makeCancelable = (promise) => {
   let hasCanceled_ = false;
   const wrappedPromise = new Promise((resolve, reject) => {
@@ -72,7 +73,8 @@ cancelable.cancel();
 上述方法，可以为异步操作添加可取消的功能，但是使用还是不够方便：在每个使用`makeCancelable`的页面都需要复制粘贴上述代码。   
 下面我们做一下改进，将上述代码抽离到一个文件中。   
 
- ```javascript
+ 
+ ```JavaScript
  /**
  * Cancelable
  * GitHub:https://github.com/crazycodeboy
@@ -91,7 +93,6 @@ export default function makeCancelable(promise){
             hasCanceled_ ? reject({isCanceled: true}) : reject(error)
         );
     });
-
     return {
         promise: wrappedPromise,
         cancel() {
@@ -100,6 +101,7 @@ export default function makeCancelable(promise){
     };
 }
 ```
+
 
 这样在使用的时候只需要将makeCancelable导入到你的相应js文件中就可以了。   
 
