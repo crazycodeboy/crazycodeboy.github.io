@@ -75,12 +75,12 @@ cancelable.cancel();
 
  
  ```JavaScript
- /**
+ /*
  * Cancelable
  * GitHub:https://github.com/crazycodeboy
  * Eamil:crazycodeboy@gmail.com 
  * @flow
- **/
+ */
 'use strict'
 
 export default function makeCancelable(promise){
