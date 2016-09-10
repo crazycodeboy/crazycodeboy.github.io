@@ -19,11 +19,26 @@
                     <li>
                         <a href="{{ site.baseurl }}/">Home</a>
                     </li>
-                    {% for page in site.pages %}{% if page.title %}
+                    <li>
+                        <a href="{{ site.baseurl }}/tags/#Android">Android</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.baseurl }}/tags/#iOS">iOS</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.baseurl }}/tags/#React Native">React Native</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.baseurl }}/tags/">TAGS</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.baseurl }}/about/">ABOUT</a>
+                    </li>
+                    <!--{% for page in site.pages %}{% if page.title %}
                     <li>
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
-                    {% endif %}{% endfor %}
+                    {% endif %}{% endfor %}-->
                 </ul>
             </div>
         </div>
