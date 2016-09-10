@@ -4,7 +4,7 @@ title:      "React Native 性能优化之可取消的异步操作"
 subtitle:   "为Promise插上可取消的翅膀 | 可取消的网络请求fetch"
 date:       2016-09-08 00:00:00
 author:     "CrazyCodeBoy"
-header-img: "img/post-bg-2015.jpg"
+header-img: "http://pic.90sjimg.com/back_pic/00/00/40/82/659732c942d9a4c8957a56b38c296132.jpg"
 catalog: true
 tags:
     - Android
