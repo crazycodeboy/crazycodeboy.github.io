@@ -20,7 +20,7 @@ jianshu_username:    ca3943a4172a
 #twitter_username:  huxpro
 #facebook_username:  CrazyCodeBoy
 # linkedin_username:  firstname-lastname-idxxxx
-
+email_account:      craycodeboy@gmail.com
 
 
 # Build settings
@@ -53,7 +53,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: penn
+duoshuo_username: crazycodeboy
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -85,13 +85,13 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "我的CSDN",
+        title: "CSDN",
         href: "http://blog.csdn.net/fengyuzhengfan"
     },{
-        title: "我的简书",
+        title: "简书",
         href: "http://www.jianshu.com/users/ca3943a4172a/latest_articles"
     },{
-         title: "我的GitHub",
+         title: "GitHub",
          href: "https://github.com/crazycodeboy"
     }
 ]

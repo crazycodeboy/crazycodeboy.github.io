@@ -82,7 +82,9 @@ cancelable.cancel();
  * @flow
  */
 'use strict'
+```
 
+ ```JavaScript
 export default function makeCancelable(promise){
     let hasCanceled_ = false;
     const wrappedPromise = new Promise((resolve, reject) => {

@@ -130,6 +130,29 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
+
+                            {% if site.csdn_username %}
+                            <li>
+                                <a target="_blank" href="http://blog.csdn.net/{{ site.csdn_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse" style="font-size: xx-small">CSDN</i>
+                            </span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if site.jianshu_username %}
+                            <li>
+                                <a target="_blank" href="http://www.jianshu.com/users/{{ site.jianshu_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">简</i>
+                            </span>
+                                </a>
+                            </li>
+                            {% endif %}
+
                             {% if site.zhihu_username %}
                             <li>
                                 <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
@@ -180,6 +203,21 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
+
+
+                            {% if site.email_account %}
+                            <li>
+                                <a target="_blank" href="mailto:{{ site.email_account }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                           </span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+
+
                         </ul>
                     </div>
                 </section>
