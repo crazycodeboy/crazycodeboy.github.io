@@ -32,6 +32,28 @@
                     {% endif %}
 
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    {% if site.csdn_username %}
+                    <li>
+                        <a target="_blank" href="http://blog.csdn.net/{{ site.csdn_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse" style="font-size: small">CSDN</i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+
+                    {% if site.jianshu_username %}
+                    <li>
+                        <a target="_blank" href="http://www.jianshu.com/users/{{ site.jianshu_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">简</i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+
                     {% if site.zhihu_username %}
                     <li>
                         <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
@@ -97,8 +119,8 @@
 
     <!-- search -->
     <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
-      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
-        <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
+      opacity: 0.8; background-color: #111111; z-index: 9999; display: none;">
+        <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px; border-color: #ffc231" placeholder="文章标题 日期 标签" >
 
         <div style="position: fixed; top: 16px; right: 16px;">
             <!--<img src="/search/img/cb-close.png"  id="cb-close-btn"/>-->
