@@ -76,7 +76,7 @@ render() {
         return (
             <View style={styles.container}>
                 <TouchableHighlight
-                    style={{padding: 10}}
+                    style={ {padding: 10}}
                     onPress={()=>{
                         this.refs.toast.show('hello world!');
                     }}>
@@ -95,7 +95,7 @@ render() {
         return (
             <View style={styles.container}>
                 <TouchableHighlight
-                    style={{padding: 10}}
+                    style={ {padding: 10}}
                     onPress={()=>{
                         this.refs.toast.show('hello world!',DURATION.LENGTH_LONG);
                     }}>
@@ -103,7 +103,7 @@ render() {
                 </TouchableHighlight>
                 <Toast 
                     ref="toast" 
-                    style={{backgroundColor:'red'}} 
+                    style={ {backgroundColor:'red'}} 
                     position='top'
                 />
             </View>
