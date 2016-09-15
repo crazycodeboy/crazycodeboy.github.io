@@ -14,7 +14,7 @@ tags: [Android,React Native,启动屏]
 
 本文出自[《React Native学习笔记》](https://github.com/crazycodeboy/RNStudyNotes/)系列文章。
 
-![React Native Android启动屏，启动白屏，闪现白屏](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%20问题及解决方案合集/img/React%20Native%20Android启动屏，启动白屏，闪现白屏/React%20Native%20Android启动屏，启动白屏，闪现白屏.gif)
+![React Native Android启动屏，启动白屏，闪现白屏](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%20%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%90%88%E9%9B%86/React%20Native%20Android%E5%90%AF%E5%8A%A8%E5%B1%8F%EF%BC%8C%E5%90%AF%E5%8A%A8%E7%99%BD%E5%B1%8F%EF%BC%8C%E9%97%AA%E7%8E%B0%E7%99%BD%E5%B1%8F/img/React%20Native%20Android%E5%90%AF%E5%8A%A8%E5%B1%8F%EF%BC%8C%E5%90%AF%E5%8A%A8%E7%99%BD%E5%B1%8F%EF%BC%8C%E9%97%AA%E7%8E%B0%E7%99%BD%E5%B1%8F.gif)
 
 ## 问题描述：  
 用React Native架构的无论是Android APP还是iOS APP，在启动时都出现白屏现象，时间大概1~3s（根据手机或模拟器的性能不同而不同）。
@@ -364,12 +364,13 @@ LaunchScreen.hide();
 
 **既然来了，留下个喜欢再走吧，鼓励我继续创作(^_^)∠※**   
 
-**如果喜欢我的文章，那就关注我的[博客](http://www.cboy.me/)吧，让我们一起做朋友~~**
+**如果喜欢我的文章，那就关注我的[博客@http://www.cboy.me/](http://www.cboy.me/)吧，让我们一起做朋友~~**
 
 #### 戳这里,加关注哦:   
 
 >**[微博](http://weibo.com/u/6003602003)：第一时间获取推送**    
 **[个人博客](http://www.cboy.me/)：干货文章都在这里哦**  
 **[GitHub](https://github.com/crazycodeboy/)：我的开源项目**     
+
 
 
