@@ -13,7 +13,7 @@ tags: [iOS,React Native,iOS Simulator]
 
 # React Native 和iOS Simulator 那点事   
 
-本文出自[《React Native学习笔记》](https://github.com/crazycodeboy/RNStudyNotes/)系列文章。
+本文出自[《React Native学习笔记》](https://github.com/crazycodeboy/RNStudyNotes/)[@http://www.cboy.me](http://www.cboy.me)系列文章。
 
 ## 问题1：使用React Native时按cmd+r无法reload js，cmd+d无法唤起 React Native开发菜单？  
 
