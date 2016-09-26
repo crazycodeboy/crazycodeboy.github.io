@@ -32,6 +32,7 @@ tags: [TakePhoto,Android,开源,工具库]
 
 
 GitHub地址： [https://github.com/crazycodeboy/TakePhoto](https://github.com/crazycodeboy/TakePhoto)
+
 ## 目录
 
 - [安装说明](#安装说明)
