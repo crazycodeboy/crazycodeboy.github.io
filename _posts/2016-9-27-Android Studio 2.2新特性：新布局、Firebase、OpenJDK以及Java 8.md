@@ -36,22 +36,23 @@ tags: [Android Studio,Android]
 
 ## 测试
 
-Espresso测试记录器（beta）：记录与UI的交互，从而可以在本地的Espresso测试或Firebase上进行回放。
-GPU调试器（beta）：用于调试OpenGL ES应用。
-APK分析器：提供APK中各种组件大小的信息。
-Android Studio 2.2包含了稳定性问题的修正以及性能的提升。关于新特性的更多细节信息，大家可以查看[AndroidStudio发布说明](https://developer.android.com/studio/releases/index.html)。
+* Espresso测试记录器（beta）：记录与UI的交互，从而可以在本地的Espresso测试或Firebase上进行回放。
+* GPU调试器（beta）：用于调试OpenGL ES应用。
+* APK分析器：提供APK中各种组件大小的信息。
+
+ Android Studio 2.2包含了稳定性问题的修正以及性能的提升。关于新特性的更多细节信息，大家可以查看[AndroidStudio发布说明](https://developer.android.com/studio/releases/index.html)。
 
 ## 更新AndroidStudio2.2
 
-### 方式一： 自动检查更新
-Menu(菜单)->Help(帮助)->Check for updates(检查更新)。
+#### 方式一： 自动检查更新
+Menu(菜单)->Help(帮助)->Check for updates(检查更新)。  
 然后AndroidStudio会自动检查是否有更新，然后按照提示一路点下去就行，通过这种方式更新失败的小伙伴，可以往下看。
 
-### 方式二：完整包更新
-大家也可以通过这种方式来更新你的AndroidStudio。
-首先，到[Android开发者网站](https://developer.android.com/studio/install.html)下载最新的AndroidStudio，然后进行安装即可。
-考虑到大部分小伙伴访问不了Google服务器，我把AndroidStudio最新版下载后放到了百度网盘上，供小伙伴们下载。
-[AndroidStudio2.2 for Mac](http://pan.baidu.com/s/1dFun0pN)  密码`xt53`
+#### 方式二：完整包更新
+大家也可以通过这种方式来更新你的AndroidStudio。  
+首先，到[Android开发者网站](https://developer.android.com/studio/install.html)下载最新的AndroidStudio，然后进行安装即可。  
+考虑到大部分小伙伴访问不了Google服务器，我把AndroidStudio最新版下载后放到了百度网盘上，供小伙伴们下载。  
+[AndroidStudio2.2 for Mac](http://pan.baidu.com/s/1dFun0pN)  密码`xt53`     
 [AndroidStudio2.2 for Windows](http://pan.baidu.com/s/1dEW6UUt) 密码`zikl`
 
 ## 最后
