@@ -82,6 +82,7 @@ Promises是ES6的一个新的特性，在React Native中你会看到Promises的�
 原生模块也是支持Promises的，这对喜欢使用Promises的小伙伴则是一个很好的消息。
 
 **在原生模块中：**
+
 ```java
 public class RNTestModule extends ReactContextBaseJavaModule{
     public RNTestModule(ReactApplicationContext reactContext) {
@@ -165,7 +166,7 @@ test2(){
 
 原生模块支持另外一种向JS模块传递数据的方式，通过发送事件的方式。   
 
-原生模块，可以向JS传递事件而不要而不需要直接的调用，就像Android中的广播，iOS中的通知中心。  
+原生模块，可以向JS传递事件而不需要直接的调用，就像Android中的广播，iOS中的通知中心。  
 
 下面就向大家演示通过`RCTDeviceEventEmitter`，来向JS传递事件。
 
