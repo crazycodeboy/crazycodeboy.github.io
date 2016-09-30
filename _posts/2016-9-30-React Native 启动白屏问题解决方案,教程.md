@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "React Native 启动白屏问题解决方案,教程.md"
-subtitle:   "React Native Android iOS启动白屏"
+title:      "React Native 启动白屏问题解决方案,教程"
+subtitle:   "React Native 添加启动屏"
 date:       2016-09-30 20:00:00
 author:     "CrazyCodeBoy"
 header-img: "./img/post/2016-9-30-react-native-splash-screen.png"
@@ -11,10 +11,10 @@ tags: [React Native,Android,心得,教程]
 
 ## 目录
 
-* [问题描述](问题描述)
-* [问题分析](问题分析)
-* [Android启动白屏解决方案](Android启动白屏解决方案)
-* [iOS启动白屏解决方案](iOS启动白屏解决方案)
+* [问题描述](#问题描述)
+* [问题分析](#问题分析)
+* [Android启动白屏解决方案](#Android启动白屏解决方案)
+* [iOS启动白屏解决方案](#iOS启动白屏解决方案)
 * [开源库](#开源库)
 * [最后](#最后)
 
@@ -37,7 +37,7 @@ React Native应用在启动时会将js bundle读取到内存中，并完成渲�
 
 ## Android启动白屏解决方案
 
-我们可以为React Native Android应用添加启动屏，来解决启动白屏的问题。我在[《React Native Android启动屏，启动白屏，闪现白屏》](http://www.cboy.me/2016/09/15/React-Native-Android%E5%90%AF%E5%8A%A8%E5%B1%8F-%E5%90%AF%E5%8A%A8%E7%99%BD%E5%B1%8F-%E9%97%AA%E7%8E%B0%E7%99%BD%E5%B1%8F/)一文中介绍过一种为React Native Android应用添加启动屏的方法，
+我们可以通过为React Native Android应用添加启动屏的方式，来解决启动白屏的问题。我在[《React Native Android启动屏，启动白屏，闪现白屏》](http://www.cboy.me/2016/09/15/React-Native-Android%E5%90%AF%E5%8A%A8%E5%B1%8F-%E5%90%AF%E5%8A%A8%E7%99%BD%E5%B1%8F-%E9%97%AA%E7%8E%B0%E7%99%BD%E5%B1%8F/)一文中介绍过一种为React Native Android应用添加启动屏的方法，
 不过那种方法虽好，但牵扯到对React Native 源码的修改，如果React Native 版本有更新还需要对源码做一些处理，所以以后维护起来不是很方便。  
 
 下面就向大家介绍另外一种为React Native Android应用添加启动屏的方案。    
@@ -87,11 +87,11 @@ public static void show(final Activity activity,final boolean fullScreen) {
 } 
 ```
 
-为了，Activity被销毁的时候，持有的Activity能被及时的回收，这里我们通过`new WeakReference<Activity>(activity);`创建了一个Activity的若引用。
+为了Activity被销毁的时候，持有的Activity能被及时的回收，这里我们通过`new WeakReference<Activity>(activity);`创建了一个Activity的弱引用。
 
-另外，因为在Android中所有的有关UI操作都必须在主线程，所有我们`activity.runOnUiThread(new Runnable()...`，将对话框的显示放在了主线程处理。
+另外，因为在Android中所有的有关UI操作都必须在主线程，所有我们通过`activity.runOnUiThread(new Runnable()...`，将对话框的显示放在了主线程处理。
 
-上述代码中，`show`的第二个参数`fullScreen`表示启动屏是全屏显示(及是否隐藏状态栏)，代码会控制对话框加载不同的主题样式[R.style.SplashScreen_Fullscreen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/android/src/main/res/values/styles.xml)与[R.style.SplashScreen_SplashTheme](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/android/src/main/res/values/styles.xml)来达到是否隐藏状态的需求。  
+上述代码中，`show`的第二个参数`fullScreen`表示启动屏是全屏显示(即是否隐藏状态栏)，代码会控制对话框加载不同的主题样式[R.style.SplashScreen_Fullscreen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/android/src/main/res/values/styles.xml)与[R.style.SplashScreen_SplashTheme](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/android/src/main/res/values/styles.xml)来达到是否隐藏状态的需求。  
 
 然后，我们可以在`MainActivity.java`的`onCreate`方法中调`void show(final Activity activity,final boolean fullScreen)`方法来显示启动屏。
 
@@ -221,7 +221,7 @@ protected List<ReactPackage> getPackages() {
 
 ### 第三步：在JS模块中控制启动屏的关闭
 
-创建一个名为`[SplashScreen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/index.js)`的文件，加入下面代码。  
+创建一个名为[SplashScreen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/index.js)的文件，加入下面代码。  
 
 
 ```JavaScript
@@ -326,15 +326,16 @@ RCT_EXPORT_METHOD(hide) {
 ```
 
 在上述代码中，我们通过`[[NSRunLoop mainRunLoop] runUntilDate:later];`来控制`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions`方法执行的时间，
-主线程会没隔0.1s阻塞一次，直到`waiting`变量为true，然后我们就可以通过暴露给JS模块的`hide`方法来控制`waiting`变量的值，继而达到控制启动屏幕的关闭。
+主线程会每隔0.1s阻塞一次，直到`waiting`变量为true，然后我们就可以通过暴露给JS模块的`hide`方法来控制`waiting`变量的值，继而达到控制启动屏幕的关闭。
 
 ### 第二步：在JS模块中控制启动屏的关闭
 
-通过第一步我们已经向JS模块暴露了`hide`方法，然我们就可以在JS模块中通过`hide`方法来关闭启动屏幕。由于iOS在JS模块中控制启动屏的关闭的方法和Android中[第三步：在JS模块中控制启动屏的关闭](#第三步：在JS模块中控制启动屏的关闭)的方法是一样的，这一就不在介绍了。
+通过第一步我们已经向JS模块暴露了`hide`方法，然我们就可以在JS模块中通过`hide`方法来关闭启动屏幕。由于iOS在JS模块中控制启动屏的关闭的方法和Android中[第三步：在JS模块中控制启动屏的关闭](##第三步在js模块中控制启动屏的关闭)的方法是一样的，这里就不再介绍了。
 
 ### 开源库
 
-为了方便大家使用和解决React Native应用启动白屏的问题，我已经上述方案做成React Native组件[react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/README.zh.md),开源在了[GitHub](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/README.zh.md)上，小伙伴们可以下载安装。
+为了方便大家使用和解决React Native应用启动白屏的问题，我已经将上述方案做成React Native组件[react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/README.zh.md),
+开源在了[GitHub](https://github.com/crazycodeboy/react-native-splash-screen/blob/master/README.zh.md)上，小伙伴们可以下载使用。
 
 
 ## 最后
