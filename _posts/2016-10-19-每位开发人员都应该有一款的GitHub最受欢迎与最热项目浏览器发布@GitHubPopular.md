@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "2016-10-19-每位开发人员都应该有一款的GitHub最受欢迎与最热项目浏览器发布@GitHubPopular"
+title:      "每位开发人员都应该有一款的GitHub最受欢迎与最热项目浏览器发布@GitHubPopular"
 date:       2016-10-19 20:00:00
 author:     "CrazyCodeBoy"
 linear-gradient:   "linear-gradient(120deg,#2b488a,#ca3749)"
