@@ -2,7 +2,7 @@
 layout:     post
 title:      "React Native原生模块向JS传递数据的几种方式(Android)"
 subtitle:   "React Native原生模块与JS模块通信的几种方式"
-date:       2016-09-29 20:00:00
+date:       "2016-09-29 20:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:   "linear-gradient(120deg,#2b488a,#ca3749)"
 catalog: true

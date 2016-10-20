@@ -2,7 +2,7 @@
 layout:     post
 title:      "React Native 性能优化之可取消的异步操作"
 subtitle:   "为Promise插上可取消的翅膀 | 可取消的网络请求fetch"
-date:       2016-09-08 00:00:00
+date:       "2016-09-08 00:00:00"
 author:     "CrazyCodeBoy"
 header-img: "./img/post/post-bg-performance.jpg"
 catalog: true

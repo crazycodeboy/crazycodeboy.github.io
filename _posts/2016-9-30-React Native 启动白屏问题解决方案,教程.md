@@ -2,7 +2,7 @@
 layout:     post
 title:      "React Native 启动白屏问题解决方案,教程"
 subtitle:   "React Native 添加启动屏"
-date:       2016-09-30 20:00:00
+date:       "2016-09-30 20:00:00"
 author:     "CrazyCodeBoy"
 header-img: "./img/post/2016-9-30-react-native-splash-screen.png"
 catalog: true

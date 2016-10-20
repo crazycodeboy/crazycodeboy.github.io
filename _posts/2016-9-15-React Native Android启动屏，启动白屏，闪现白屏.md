@@ -2,7 +2,7 @@
 layout:     post
 title:      "React Native Android启动屏，启动白屏，闪现白屏"
 subtitle:   "React Native Android的启动白屏的原因，解决方案，原理，使用方法"
-date:       2016-09-15 00:00:00
+date:       "2016-09-15 00:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:    "linear-gradient(120deg,#48d6b6,#b7d143)"
 catalog: true

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "INSTALL FAILED CONFLICTING PROVIDER问题完美解决方案"
-date:       2016-10-9 20:00:00
+date:       "2016-10-9 20:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:   "linear-gradient(120deg,#2b488a,#ca3749)"
 catalog: true

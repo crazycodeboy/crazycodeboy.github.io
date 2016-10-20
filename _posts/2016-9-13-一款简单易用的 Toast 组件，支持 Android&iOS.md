@@ -2,7 +2,7 @@
 layout:     post
 title:      "一款简单易用的 Toast 组件，支持 Android&iOS"
 subtitle:   "react-native-easy-toast"
-date:       2016-09-13 00:00:00
+date:       "2016-09-13 00:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:    "linear-gradient(120deg, #155799, #159957)"
 catalog: true

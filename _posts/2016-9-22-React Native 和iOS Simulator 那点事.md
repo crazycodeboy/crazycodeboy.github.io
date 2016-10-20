@@ -2,7 +2,7 @@
 layout:     post
 title:      "React Native 和iOS Simulator 那点事 "
 subtitle:   "cmd+r无法reload js|iOS Simulator的动画变得非常慢"
-date:       2016-09-22 00:00:00
+date:       "2016-09-22 00:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:   "linear-gradient(120deg,#2b488a,#ca3749)"
 catalog: true

@@ -2,7 +2,7 @@
 layout:     post
 title:      "在Android 设备上获取照片、裁剪图片、压缩图片 @TakePhoto V3.0 发布"
 subtitle:   "TakePhoto V3.0 发布"
-date:       2016-09-26 20:00:00
+date:       "2016-09-26 20:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:   "linear-gradient(120deg,#2b488a,#ca3749)"
 catalog: true

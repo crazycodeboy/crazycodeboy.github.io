@@ -2,7 +2,7 @@
 layout:     post
 title:      "Android Studio 2.2新特性：新布局、Firebase、OpenJDK以及Java 8"
 subtitle:   "Android Studio2.22新特性"
-date:       2016-09-27 20:00:00
+date:       "2016-09-27 20:00:00"
 author:     "CrazyCodeBoy"
 linear-gradient:   "linear-gradient(120deg,#2b488a,#ca3749)"
 catalog: true

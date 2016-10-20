@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: crazycodeboy@gmail.com
 description: "关于移动端技术 | Android&iOS Development Manager | 这里是 CrazyCodeBoy@贾鹏辉 的个人博客,分享技术干货。"
 keyword: "贾鹏辉,jiapenghui,CrazyCodeBoy,fengyuzhegnfan,Android,iOS,@贾鹏辉,贾鹏辉的博客,移动开发,移动端,技术干货,Android开发,iOS开发,程序员,开发者,个人网站, 移动互联网,React Native, React.js,专注移动技术开发(Android&IOS),React Native开发,React Native教程,React Native博客"
-url: "http://www.cboy.me"              # your host, for absolute URL
+url: "http://www.devio.org"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -61,10 +61,10 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: ba9d6d66d8432bf15ded3b0962538a45
+ba_track_id: 7873fa4d30e5159dc8ff0cdea9a03bc9
 # Google Analytics
-ga_track_id: 'UA-81644587-3'            # Format: UA-xxxxxx-xx
-ga_domain: wwww.cboy.me
+ga_track_id: 'UA-86027438-1'            # Format: UA-xxxxxx-xx
+ga_domain: www.devio.org
 
 
 
